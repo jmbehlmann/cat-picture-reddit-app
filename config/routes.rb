@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post "/votes" => "votes#create"
   patch "/votes/:id" => "votes#update"
 
+  post "/users" => "users#create"
 end
