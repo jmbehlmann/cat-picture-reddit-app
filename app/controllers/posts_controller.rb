@@ -14,7 +14,7 @@ class PostsController < ApplicationController
     @post = Post.new(
       title: params[:title],
       image: params[:image],
-      user_id: params[:user_id]
+      user_id: current_user.id
     )
     @post.save
     render :show

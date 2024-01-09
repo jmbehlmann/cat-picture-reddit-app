@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   patch "/votes/:id" => "votes#update"
 
   post "/users" => "users#create"
+
+  post "/sessions" => "sessions#create"
 end

@@ -1,10 +1,9 @@
 class VotesController < ApplicationController
-  validates :user_id, uniqueness: { scope: :post_id,
-    message: "only 1 vote per post" }
+  # validates :user_id, uniqueness: { scope: :post_id, message: "only 1 vote per post" }
 
   def create
     @vote = Vote.new(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       post_id: params[:post_id],
       direction: params[:direction]
     )
