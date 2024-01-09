@@ -1,4 +1,4 @@
-jbuilder.id post.id
-jbuilder.title post.title
-jbuilder.image post.image
-jbuilder.user_id post.user_id
+json.id post.id
+json.title post.title
+json.image post.image
+json.user_id post.user_id
