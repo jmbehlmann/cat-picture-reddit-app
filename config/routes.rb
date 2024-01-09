@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   delete "/posts/:id" => "posts#destroy"
 
   post "/votes" => "votes#create"
+  patch "/votes/:id" => "votes#update"
 
 end
